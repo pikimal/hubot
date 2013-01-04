@@ -15,7 +15,7 @@
 
 module.exports = (robot) ->
   
-  robot.hear /wat/i, (msg) ->
+  robot.hear /wat\b/i, (msg) ->
     msg.http("http://watme.herokuapp.com/random")
       .get() (err, res, body) ->
         msg.send JSON.parse(body).wat

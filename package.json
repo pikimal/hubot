@@ -16,7 +16,7 @@
 
   "dependencies": {
     "hubot": "2.3.2",
-    "hubot-scripts": ">= 2.1.0",
+    "hubot-scripts": "2.2.0",
     "optparse": "1.0.3",
     "jsdom": "0.3.4",
     "githubot": "0.3.0"

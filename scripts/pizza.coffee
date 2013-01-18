@@ -17,7 +17,7 @@ jsdom = require "jsdom"
 PIZZA = "http://animatedpizzagifs.com"
 
 module.exports = (robot) ->
-  robot.hear /pizza/i, (msg) ->
+  robot.respond /pizza/i, (msg) ->
     msg.http(PIZZA)
       .path("/")
       .get() (err, res, body) ->

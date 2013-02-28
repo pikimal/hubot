@@ -1,5 +1,5 @@
 # Description:
-#   None   
+#   Corrects us every time we call a Kite a Piki.
 #
 # Dependencies:
 #   None
@@ -13,7 +13,12 @@
 #   Jon Daniel 
 
 module.exports = (robot) ->
-  sigh_counter = 0
+  piki_counter = 0
 
-  robot.hear /\b[P|p][I|i][K|k][I|i]\b/, (msg) ->
-    msg.send "Don't you mean Kite?"
+  robot.hear /\b[P|p][I|i][K|k][I|i](([\.|\?|\!]*)(\s|$))/, (msg) ->
+    if piki_counter == 4
+      piki_counter = 0
+      msg.send "Seriously? Are you from the past?"      
+    else
+      piki_counter += 1
+      msg.send "Don't you mean Kite?"

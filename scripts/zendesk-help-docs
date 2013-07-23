@@ -1,0 +1,22 @@
+# Description:
+#   Returns link to a search page on Webkite's Zendesk support portal
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   hubot help doc <topic> - a topic that you would search for in Zendesk
+#
+# Author:
+#   Alaina
+
+querystring = require 'querystring';
+
+module.exports = (robot) ->
+  robot.respond /topic (.+)/i, (msg) ->
+    url = "https://webkite.zendesk.com/categories/search?utf8=%26%23x2713%3B&query="
+    query = { type: "topic", name: topic }
+    msg.send "#{url}?#{querystring.stringify(query)}"

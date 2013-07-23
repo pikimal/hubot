@@ -17,6 +17,7 @@ querystring = require 'querystring';
 
 module.exports = (robot) ->
   robot.respond /topic (.+)/i, (msg) ->
-    url = "https://webkite.zendesk.com/categories/search?utf8=%26%23x2713%3B&query="
-    query = { type: "topic", name: topic }
+    topic = msg.match[1]
+    url = "https://webkite.zendesk.com/categories/search"
+    query = {query: topic, for_search: 1, commit: "Search"} 
     msg.send "#{url}?#{querystring.stringify(query)}"

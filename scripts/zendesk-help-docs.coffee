@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot help doc <topic> - a topic that you would search for in Zendesk
+#   hubot help docs <topic> - a topic that you would search for in Zendesk
 #
 # Author:
 #   Alaina

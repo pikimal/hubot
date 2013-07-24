@@ -20,5 +20,5 @@ thanks = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /(^|\W)thanks hubot(\z|\W|$)/i, (msg) ->
+  robot.hear /(^|\W)[T|t]hanks hubot(\z|\W|$)/i, (msg) ->
     msg.send msg.random thanks

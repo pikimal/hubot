@@ -23,15 +23,11 @@ module.exports = (robot) ->
   robot.hear /where is hubot/i, (msg) ->
     msg.send msg.random response
     
-module.exports = (robot) ->
   robot.hear /hubot hates me/i, (msg) ->
     msg.send msg.random response
     
-module.exports = (robot) ->
-  robot.hear /come (on | on,) hubot/i, (msg) ->
+  robot.hear /come on[,]* hubot/i, (msg) ->
     msg.send msg.random response
     
-module.exports = (robot) ->
   robot.hear /where are you hubot/i, (msg) ->
     msg.send msg.random response
-    

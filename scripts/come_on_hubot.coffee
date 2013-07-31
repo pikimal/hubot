@@ -16,7 +16,11 @@ response = [
   "Ask again later",
   "I'm not your maid",
   "That last one was a doozie",
-  "*shakes head*"
+  "*shakes head sadly*"
+  "I'm really tired, guys"
+  "Being Hubot isn't all it's cracked up to be"
+  "Some of these image requests really make me wonder about you guys..."
+  "Get back to work!"
 ]
 
 module.exports = (robot) ->
@@ -29,5 +33,11 @@ module.exports = (robot) ->
   robot.hear /come on[,]* hubot/i, (msg) ->
     msg.send msg.random response
     
-  robot.hear /where are you hubot/i, (msg) ->
+  robot.hear /where are you/i, (msg) ->
+    msg.send msg.random response
+
+  robot.hear /what, no image?/i, (msg) ->
+    msg.send msg.random response
+    
+  robot.hear /we lost hubot/i, (msg) ->
     msg.send msg.random response

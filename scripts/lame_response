@@ -10,7 +10,7 @@
 # Author:
 #   Alaina Cauchie
 
-lame_response = [
+lameresponse = [
   "YOU'RE LAME!",
   "Lame is as lame does",
   "Your momma is lame",
@@ -24,4 +24,4 @@ lame_response = [
 
 module.exports = (robot) ->
   robot.hear /(^|\W)[L|l]ame(\z|\W|$)/i, (msg) ->
-    msg.send msg.random lame_response
+    msg.send msg.random lameresponse

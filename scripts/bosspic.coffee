@@ -25,5 +25,5 @@ ericpic = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /(^|\W)[H|h]ello, Eric(\z|\W|$)/i, (msg) ->
+  robot.hear /(^|\W)[H|h]ello Eric(\z|\W|$)/i, (msg) ->
     msg.send msg.random ericpic

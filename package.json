@@ -20,7 +20,8 @@
     "optparse": "1.0.3",
     "jsdom": "0.3.4",
     "githubot": "0.3.0",
-    "sendgrid": "0.2.1"
+    "sendgrid": "0.2.1",
+    "cheerio": "0.12.1"
   },
 
   "engines": {

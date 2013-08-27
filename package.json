@@ -17,6 +17,7 @@
   "dependencies": {
     "hubot": "2.3.2",
     "hubot-scripts": "2.2.0",
+    "moustached-hubot": "git://github.com/travis-ci/moustached-hubot.git",
     "optparse": "1.0.3",
     "jsdom": "0.3.4",
     "githubot": "0.3.0",

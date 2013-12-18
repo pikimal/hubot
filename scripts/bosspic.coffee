@@ -20,7 +20,8 @@ ericpic = [
   "http://i.imgur.com/1uvQYlR.jpg",
   "http://i.imgur.com/cWbYtDw.jpg",
   "http://i.imgur.com/88qfCnL.jpg",
-  "http://i.imgur.com/hiNwAR9.jpg"
+  "http://i.imgur.com/hiNwAR9.jpg",
+  "http://i.imgur.com/X1dNzQk.jpg"
   
 ]
 
